@@ -1,0 +1,182 @@
+*, body{
+	box-sizing: border-box;
+	height: 100%
+
+}
+/* grid layout
+-------------------*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float:left;
+	font-family: sans-serif;
+}
+
+/* generic section
+--------------------*/
+
+body {
+	padding:0;
+	margin:0; 
+}
+
+nav:before, nav:after, section:before, section:after, article:before, article:after {
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+nav {
+	background-color: rgba(255, 255, 255, 0.5);
+	width:100%;
+	
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: auto;
+	box-sizing: border-box;
+
+}
+
+nav img {
+	width: 50px;
+	height: auto;
+	margin: 0 50%;
+	padding: 5px;
+
+	
+}
+
+nav.bob {
+	border: 0 0 5px 0
+
+}
+
+header {
+	background: #ffffff url('Images/hero2.jpg') no-repeat center;
+	background-size: cover;
+	width:100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+header h1 {
+	font-size: 6em;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 10px;
+}
+
+
+#middle {
+	height: auto;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#middle a {
+	color: white;
+	font-synthesis: 1.2em;
+	padding: 20px 70px;
+	border: 3px solid #000;
+	text-decoration: none;
+
+}
+
+
+#middle a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@media all and (max-width: 786px) {
+
+	header h1 {
+		font-size: 4.6em;
+	}
+}
+
+@media all and (max-width: 360px) {
+
+	header h1 {
+		font-size: 3em;
+	}
+}
+
+main {
+	background-color: yellow;
+	width: auto;
+	height: auto;
+	box-sizing: border-box;
+}
+
+ .services {
+	background-color: #000;
+    width: 50%;
+	margin: 0;
+	display: inline-block;
+}
+
+.services article { 
+	height: 100%;
+
+}
+
+.services article img, .services2 article img {
+	width:100%;
+	height:auto;
+	
+}
+ .services2 {
+	background-color: #000;
+	width: 50%;
+	margin: 0;
+	
+	float: right;
+	display: inline-block;
+}
+
+.services2 article.nope{
+	height: auto;
+}
+
+div.News-section {
+	background-color: yellow;
+	width:100%;
+	height: 200px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.News {
+	padding: 20px;
+	height: 20px;
+}
+.para {
+	padding: 20px;
+	height: auto;
+
+}
+
+footer{
+
+}
